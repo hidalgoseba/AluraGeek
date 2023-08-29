@@ -1,7 +1,7 @@
 import { productoServicio } from '../servicios/productos-servicios.js';
 import { formatPrice } from "../formatterPrices.js";
 
-const listaProductos = (name, imageUrl, price, id) => {
+const listaProductos = (imageUrl, name, price, id) => {
   const card = document.createElement("div");
 
   const contenido = `
@@ -26,11 +26,9 @@ const listaProductos = (name, imageUrl, price, id) => {
     </div>
     `;
   card.innerHTML = contenido;
-  console.log(card)
   card.dataset.id = id;
   return card;
 };
-
 const productos = document.querySelector("[data-allProducts]");
 
 productos.addEventListener("click", async (evento) => {
@@ -51,16 +49,18 @@ productos.addEventListener("click", async (evento) => {
 const render = async () => {
   try {
     const listaProducto = await productoServicio.listaProductos();
-    listaProducto.forEach((producto) => {
+    console.log(listaProducto)
+    listaProducto.forEach(producto => {
       productos.appendChild(
         listaProductos(
-          producto.name,
           producto.imageUrl,
+          producto.name,
           producto.price,
-          producto.id
+          producto.id,
         )
       );
     })
+
   } catch (err) {
     console.log(err);
   }
