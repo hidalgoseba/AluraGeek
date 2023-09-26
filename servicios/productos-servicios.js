@@ -12,8 +12,6 @@ const listarUnProducto = (id) => {
     .catch((error) => console.log(error));
 }
 
-
-
 //POST
 const crearProductos = (imageUrl, name,  price) => {
     return fetch("https://apitestalura.onrender.com/producto", {
