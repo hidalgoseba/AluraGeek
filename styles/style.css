@@ -96,7 +96,7 @@ nav {
   padding: 1% 3%;
   border: none;
   background-color: var(--input-bg);
-  background-image: url("../../assets/lupa.png");
+  background-image: url("../assets/lupa.png");
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 320px;
