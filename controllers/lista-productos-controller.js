@@ -48,8 +48,9 @@ productos.addEventListener("click", async (evento) => {
 
 const render = async () => {
   try {
+    
     const listaProducto = await productoServicio.listaProductos();
-    console.log(listaProducto)
+    //console.log(listaProducto)
     listaProducto.forEach(producto => {
       productos.appendChild(
         listaProductos(

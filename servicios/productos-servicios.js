@@ -4,14 +4,12 @@ const listaProductos = () => {
     return fetch("https://apitestalura.onrender.com/producto")
       .then((respuesta) => respuesta.json())
       .catch((error) => console.log(error));
-    
 }
 const listarUnProducto = (id) => {
   return fetch(`https://apitestalura.onrender.com/producto/${id}`)
     .then((respuesta) => respuesta.json())
     .catch((error) => console.log(error));
 }
-
 //POST
 const crearProductos = (imageUrl, name,  price) => {
     return fetch("https://apitestalura.onrender.com/producto", {

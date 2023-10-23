@@ -12,7 +12,7 @@
       "imageUrl": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
       "price": "5",
       "id": 6,
-      "description": ""
+      "description": "laralalala"
     },
     {
       "name": "Flash",
@@ -38,8 +38,9 @@
       "name": "Darth Vader",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_975969-MLA46467090682_062021-O.webp",
       "price": "25",
-      "id": 15
-    },
+      "id": 15,
+      "description": "Apenas um teste!"
+  },
     {
       "name": "Flash",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
@@ -51,13 +52,17 @@
       "name": "Batman",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_640262-MCO47330060660_092021-O.webp",
       "price": "60",
-      "id": 17
+      "id": 17,
+      "description": "Apenas um teste!"
+
     },
     {
       "name": "Hulk",
       "imageUrl": "https://m.media-amazon.com/images/I/516X0YLRV+L._AC_SY879_.jpg",
       "price": "30",
-      "id": 18
+      "id": 18,
+      "description": "Apenas um teste!"
+
     },
     {
       "name": "Hombre araña",
@@ -69,19 +74,25 @@
       "name": "Capitán America",
       "imageUrl": "https://m.media-amazon.com/images/I/51aqEMfw9KL._AC_SY879_.jpg",
       "price": "50",
-      "id": 20
+      "id": 20,
+      "description": "Apenas um teste!"
+
     },
     {
       "name": "Super Man",
       "imageUrl": "https://juguetesdecoleccion.com/wp-content/uploads/muneco-superman-funko-pop.jpg",
       "price": "80",
-      "id": 21
+      "id": 21,
+      "description": "Apenas um teste!"
+
     },
     {
       "name": "Flash",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
       "price": "85",
-      "id": 22
+      "id": 22,
+      "description": "Apenas um teste!"
+
     }
  
   ]

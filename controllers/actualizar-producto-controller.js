@@ -15,7 +15,7 @@ productoServicio.listarUnProducto(id).then((datos) => {
   inputPrecio.value = datos.price;
   inputDescripcion.value = datos.description;
 });
-const formulario = document.querySelector("[data-form]");
+const formulario = document.querySelector("[data-allProducts]");
 
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
@@ -28,6 +28,6 @@ formulario.addEventListener("submit", (evento) => {
       inputDescripcion.value
     )
     .then(() => {
-      window.location.href = "../public/index.html";
+      window.location.href = "../index.html";
     });
 });

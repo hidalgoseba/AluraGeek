@@ -1,7 +1,7 @@
 import { productoServicio } from "../servicios/productos-servicios.js";
 import { formatPrice } from "../formatterPrices.js";
 
-const nuevoProducto = (imageUrl, name, price, id) => {
+const mostrarProducto = (imageUrl, name, price, id,) => {
   const card = document.createElement("div");
   const contenido = `
         <div class="producto">
@@ -13,7 +13,6 @@ const nuevoProducto = (imageUrl, name, price, id) => {
     `;
   card.innerHTML = contenido;
   card.dataset.id = id;
-
   return card;
 };
 
@@ -24,7 +23,7 @@ const render = async() => {
         const listaProducto = await productoServicio.listaProductos();
         listaProducto.forEach( elemento => {
             productos.appendChild(
-              nuevoProducto(
+              mostrarProducto(
                 elemento.imageUrl,
                 elemento.name,
                 elemento.price,
